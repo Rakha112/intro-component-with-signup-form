@@ -32,7 +32,7 @@ body {
 }
 
 .container .konten_kiri {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   color: white;
   text-align: center;
 }
@@ -70,6 +70,7 @@ body {
 
 .container .konten_kanan .form_bawah {
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
   border-radius: 0.625rem;
   background-color: white;
   padding: 1.5rem;
