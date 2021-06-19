@@ -23,12 +23,21 @@
         <button><span>Try it free 7 days </span>then $20/mo. thereafter</button>
       </div>
       <div class="form_bawah">
-        <form action="">
+        <form onkeypress="return event.keyCode != 13">
           <input type="text" name="first_name" id="first_name" placeholder="First Name">
+          <label class="empty_label" for="first_name" id="first">First Name cannot be empty</label>
+          
           <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+          <label class="empty_label" for="lirst_name" id="last">Last Name cannot be empty</label>
+          
           <input type="text" name="email_address" id="email_address" placeholder="Email Address">
+          <label for="email_address" id="email_wrong">Looks like this is not an email</label>
+          <label class="empty_label" for="email_address" id="email_address">Email cannot be empty</label>
+
           <input type="text" name="password" id="password" placeholder="Password">
-          <button type="submit">Claim your free trial</button>
+          <label class="empty_label" for="password" id="password">Password cannot be empty</label>
+          
+          <button type="submit" class="submit">Claim your free trial</button>
         </form>
         <p>By clicking the button, you are agreeing to our <span> Terims and Services</span></p>
       </div>
@@ -43,5 +52,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  <script src="./js/app.js"></script>
 </body>
 </html>

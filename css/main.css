@@ -59,6 +59,8 @@ body {
 }
 
 .container .konten_kanan .tombol_atas button {
+  -webkit-box-shadow: 0 8px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 2px rgba(0, 0, 0, 0.2);
   font-family: 'Poppins', sans-serif;
   font-size: 15.2px;
   color: white;
@@ -72,6 +74,7 @@ body {
   border-radius: 0.625rem;
   border: none;
   line-height: 1.65;
+  cursor: pointer;
 }
 
 .container .konten_kanan .tombol_atas button span {
@@ -82,9 +85,17 @@ body {
   outline: none;
   -webkit-box-shadow: 0 0 1px #3e3c49;
           box-shadow: 0 0 1px #3e3c49;
+  -webkit-box-shadow: 0 8px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container .konten_kanan .tombol_atas button:hover {
+  background-color: #877dca;
 }
 
 .container .konten_kanan .form_bawah {
+  -webkit-box-shadow: 0 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 2px rgba(0, 0, 0, 0.2);
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 0.625rem;
@@ -102,6 +113,29 @@ body {
           flex-direction: column;
 }
 
+.container .konten_kanan .form_bawah form .first_name {
+  position: relative;
+}
+
+.container .konten_kanan .form_bawah form .first_name img {
+  position: absolute;
+  width: 12px;
+}
+
+.container .konten_kanan .form_bawah form label {
+  display: none;
+}
+
+.container .konten_kanan .form_bawah form .error_label {
+  margin-top: -1rem;
+  font-size: 12px;
+  color: #ff7a7a;
+  font-style: italic;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 18px;
+}
+
 .container .konten_kanan .form_bawah form input {
   border-radius: 0.375rem;
   padding: 1rem 0 1rem 1rem;
@@ -116,7 +150,17 @@ body {
   border: 1px solid #3e3c49;
 }
 
+.container .konten_kanan .form_bawah form .input_error {
+  border: 2px solid #ff7a7a;
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 95%;
+}
+
 .container .konten_kanan .form_bawah form button {
+  -webkit-box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
   background-color: #38cc8c;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
@@ -136,6 +180,8 @@ body {
   outline: none;
   -webkit-box-shadow: 0 0 1px #3da97a;
           box-shadow: 0 0 1px #3da97a;
+  -webkit-box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 .container .konten_kanan .form_bawah form button:hover {
