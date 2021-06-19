@@ -25,20 +25,27 @@
     }
     .konten_kanan {
         .tombol_atas {
-            margin-top: 4.125rem;
-            width: 100%;
-            background-color: $Blue;
-            padding: 1.25rem 5rem 1.125rem 5rem;
-            text-align: center;
-            border-radius: 0.625rem;
-            a {
-                font-size: 15px;
+            button {
+                font-family: 'Poppins', sans-serif;
+                font-size: 15.2px;
                 color: white;
                 text-decoration: none;
                 font-weight: 400;
+                margin-top: 4.125rem;
+                width: 100%;
+                background-color: $Blue;
+                padding: 1.25rem 5rem 1.125rem 5rem;
+                text-align: center;
+                border-radius: 0.625rem;
+                border: none;
+                line-height: 1.65;
                 span {
                     font-weight: 700;
                 }
+            }
+            button:focus {
+                outline: none;
+                box-shadow: 0 0 1px $Dark_Blue;
             }
         }
         .form_bawah {
@@ -58,6 +65,10 @@
                     font-weight: 600;
                     font-family: 'Poppins', sans-serif;
                 }
+                input:focus {
+                    outline: none;
+                    border: 1px solid $Dark_Blue;
+                }
                 button {
                     background-color: $Green;
                     text-transform: uppercase;
@@ -73,6 +84,14 @@
                     margin-bottom: 0.75rem;
                     cursor: pointer;
                 }
+                button:focus {
+                    outline: none;
+                    box-shadow: 0 0 1px hsl(154, 47%, 45%);
+                   
+                }
+                button:hover {
+                    background-color: hsl(154, 66%, 59%);
+                }
             }
             p {
                 text-align: center;
@@ -82,6 +101,46 @@
                 span {
                     color: $Red;
                     font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        max-width: 69.375rem;
+        .konten_kiri {
+            margin: auto;
+            grid-column: 1/2;
+            text-align: left;
+            h1 {
+                line-height: 1.1;
+                font-size: 3.03125rem;
+                margin-bottom: 2rem;
+            }
+        }
+        .konten_kanan {
+            margin-top: auto;
+            margin-bottom: auto;
+            grid-column: 2/3;
+            margin-left: 1rem;
+            .tombol_atas {
+                button {
+                    margin-top: 0;
+                }
+            }
+            .form_bawah {
+                padding: 2.5rem;
+                margin-bottom: 0;
+                form {
+                    input {
+                        padding: 1.125rem 0 1.125rem 1.75rem;
+                        margin-bottom: 1.25rem;
+                    }
                 }
             }
         }
